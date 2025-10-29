@@ -1,17 +1,35 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-PE">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>APP INTERMEDIO</title>
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <img src="./public/logo.png" alt="logo de app" class="logo">
+    <h1>APLICASION DE TAREAS</h1>
+    <form action="#" id="inputUsuario">
+        <input type="text" placeholder="escribe tu tarea aki">
+        <input type="submit" value="+" id="botom agregar">
+    </form>
+    <div id="lista" class="contenedor-lista">
+        <div class="contenedor-tarea" id="1">
+            <label>
+                <input type="checkbox">
+                tarea 1
+            </label>
+            <img src="./public/delete.png" alt="eliminar" class="btneliminar">
+        </div>
+    </div>
+    <div id="stats">
+        tareas pendientes:5 completadas :3
+    </div>
 
 
 
 
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
