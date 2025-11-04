@@ -1,20 +1,21 @@
 :root{
-    --orange: #d95550;
-    --lightorange: #dd6662;
-    --verylightorange: #f89e8b;
-    --gris: #55557b;
-    --blanquito: #fff;
+    --naranja:#d95550;
+    --naranjaMedio:#dd6662;
+    --naranjaClaro:#f89e8b;
+    --gris:#55557b;
+    --blanco:#fff;
 }
+
 *{
     margin: 0;
     padding: 0;
 }
+
 body{
-    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: var(--orange);
-
-
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--naranja);
 }
+
 .logo{
     width: 300px;
     position: absolute;
@@ -23,71 +24,83 @@ body{
 }
 
 h1{
-    margin-top: 250px;
-    color: var(--blanquito);
+    margin-top: 150px;
+    color: var(--blanco);
     text-align: center;
-
 }
+
 form{
-    border: 1px solid;
+    border: 1px solid var(--naranjaClaro);
     width: 400px;
     margin: 45px auto;
     text-align: center;
+    border-radius: 10px;
 }
-
+/* entro al formulario, de formulario al input y seleccione al input de tipo texto */
 form input[type="text"]{
-    background-color: var(--orange);
-    color: var(--blanquito);
-    border-style: none;
-    font-size: 1.5rem;
-
+    background-color: var(--naranja);
+    color: var(--blanco);
+    border-style: none;/* quitar el estilo de borde que tiene el input de tipo texto */
+    font-size: 1.5rem;/* para variar el tamañode un texto en funcion a la pantalla   rem=16  */
 }
-
+/* entro al formulario, al input de tipo text del placeholder */
 form input[type="text"]::placeholder{
-    color: var(--orange);
+    color: var(--naranjaClaro);
 }
+/* quitar el estilo por defecto de focus */
 form input[type="text"]:focus{
     outline: none;
 }
-
 /* estos son selectores para ingresar a algo en especifico */
 form input[type="submit"]{
     font-size: 2em;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border-style: none;/*border por defecto no quiero*/
+    border-style: none;
     color: var(--naranja);
 }
-
 /*al pasar por el boton cambia de colores*/
 form input[type="submit"]:hover{
     background-color: var(--naranjaClaro);
     cursor: pointer;
     color: var(--blanco);
 }
+
+/* para el div padre */
 .contenedor-lista{
     width: 400px;
-    margin: 0px;
+    margin: 0 auto;
 }
+/* para el div tarea */
 .contenedor-tarea{
-background-color: var(--blanquito);
-display: flex;
-justify-content: space-between;
-margin-bottom: 6px;
-padding: 16px;
-border-radius: 4px;
-font-size: 1.1em;
-font-weight: 500;
-color: var(--gris);
-}
-.btneliminar{
-    width: 30px;
-    height: 30px;
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    padding: 16px;/* espacio dentro de la cajita */
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--gris);
 }
 
-.btneliminar:hover{
+/* estilizar el boton del tacho */
+.btnEliminar{
+    width: 18px;
+    height: 18px;
+}
+.btnEliminar:hover{
     cursor: pointer;
     width: 25px;
     height: 25px;
+    transition: all 0.3s;
+}
+
+/* estilizar el stats */
+#stats{
+    margin-top: 25px;
+    font-size: 1.3em;
+    color: var(--naranjaClaro);
+    text-align: center;
 }

@@ -3,33 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APP INTERMEDIO</title>
+    <title>Aplicacion de Tareas</title>
     <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <img src="./public/logo.png" alt="logo de app" class="logo">
-    <h1>APLICASION DE TAREAS</h1>
-    <form action="#" id="inputUsuario">
-        <input type="text" placeholder="escribe tu tarea aki" autofocus>
-        <input type="submit" value="+" id="botom agregar">
-    </form>
-    <div id="lista" class="contenedor-lista">
-        <div class="contenedor-tarea" id="1">
-            <label>
-                <input type="checkbox">
-                tarea 1
-            </label>
-            <img src="./public/delete.png" alt="eliminar" class="btneliminar">
-        </div>
-    </div>
-    <div id="stats">
-        tareas pendientes:5 completadas :3
-    </div>
+    <img src="./public/logo.png" alt="Logo de mi app" class="logo">
 
+    <h1>Aplicacion de Tareas</h1>
 
+     <form action="#" id="inputUsuario">
+        <input type="text" placeholder="Escribe tu tarea aqui..." autofocus>
+        <input type="submit" value="+" id="btnAgregar"> <!-- el formulario siempre trabaja con un SUBMIT, ya que el formulario captura la info mediante submit -->
+     </form><!--form usamoscuando se configura para interactuar con una BD, si no hay BD, entonces dejamos con un # -->
 
+     <div id="lista" class="contenedor-lista">
+     </div>
 
-    <script src="./js/script.js"></script>
+     <div id="stats">
+     </div>
+
+     <script src="./js/script.js"></script>
 </body>
 </html>
