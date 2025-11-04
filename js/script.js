@@ -22,7 +22,7 @@ let agregaTarea=()=>{
                 <input type="checkbox">
                 ${newValue}
             </label>
-            <img src="./assets/delete.png" alt="eliminar" class="btnEliminar">
+            <img src="./public/delete.png" alt="eliminar" class="btnEliminar">
         </div>
     `
     input.value=""
